@@ -3,6 +3,11 @@ table{
     height: 500px;
 }
 
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 table td{
     width: 33.33%;
 }
