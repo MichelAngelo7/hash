@@ -11,32 +11,31 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
   </head>
 
   <body>
     <h1>Jogo da Velha</h1>
-    <table class="center">
-      <tr>
-        <td></td>
-        <td class="border-left-border-right"></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td class="border-top-border-bottom"></td>
-        <td class="border-top-border-bottom border-left-border-right"></td>
-        <td class="border-top-border-bottom"></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td class="border-left-border-right"></td>
-        <td></td>
-      </tr>
-    </table>
+    <div id="game">
+      <table class="center">
+        <tr>
+          <td></td>
+          <td class="border-left-border-right"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="border-top-border-bottom"></td>
+          <td class="border-top-border-bottom border-left-border-right"></td>
+          <td class="border-top-border-bottom"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="border-left-border-right"></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
   </body>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
 
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -58,7 +57,7 @@
           </form>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Start The Game</button>
+          <button id="button_start_game" type="button" class="btn btn-primary">Start The Game</button>
         </div>
       </div>
     </div>
