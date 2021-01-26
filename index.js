@@ -5,6 +5,12 @@ $(document).ready(function(){
     $('#button_start_game').click(function(){
         getDataPlayers();
     });
+
+    $('td').click(function(){
+        if($(this).html()== ""){
+                fillColumn(this);
+        }
+    });
 });
 
 function getDataPlayers(){
@@ -19,12 +25,12 @@ function getDataPlayers(){
         alert("Preencha o campo com o nome do primeiro jogador");
         startGame = false;
     }
-    
+
     if(playerTwo == ""){
         alert("Preencha o campo com o nome do segundo jogador");
         startGame = false;
     }
-    
+
     if(startGame == true){
         $('#staticBackdrop').modal('hide');
         fillNamePlayers();
@@ -40,7 +46,28 @@ function fillNamePlayers(){
     let playerTwo = $("input[name='input_player_two']").val();
 
     $("#span_player_one").html(playerOne);
-    
+
     $("#span_player_two").html(playerTwo);
 
+}
+
+let lastMove = "";
+
+function fillColumn(column){
+    let currentMove;
+    if (lastMove == ""){
+        currentMove = "X";
+    }
+    if (lastMove == "O"){
+        currentMove = "X";
+    }
+    if (lastMove == "X"){
+        currentMove = "O";
+    }
+
+    lastMove = currentMove;
+
+    $(column).html(currentMove);
+
+    console.log(currentMove);
 }

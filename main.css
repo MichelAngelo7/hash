@@ -18,6 +18,8 @@ table.center {
 
 table td{
     width: 33.33%;
+    height: 150px !important;
+    text-align: center;
 }
 
 .border-top-border-bottom {
