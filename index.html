@@ -15,25 +15,36 @@
   </head>
 
   <body>
-    <h1>Jogo da Velha</h1>
-    <div id="game">
-      <table class="center">
-        <tr>
-          <td></td>
-          <td class="border-left-border-right"></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="border-top-border-bottom"></td>
-          <td class="border-top-border-bottom border-left-border-right"></td>
-          <td class="border-top-border-bottom"></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td class="border-left-border-right"></td>
-          <td></td>
-        </tr>
-      </table>
+    <div id="game" class="container-fluid">
+
+      <div class="row rank">
+        <div class="col-sm">
+          <h1><span id="span_player_one"></span> <span class="badge badge-secondary">0</span></h1>
+        </div>
+        <div class="col-sm text-right">
+          <h1><span id="span_player_two"></span> <span class="badge badge-secondary">0</span></h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <table class="center">
+          <tr>
+            <td></td>
+            <td class="border-left-border-right"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="border-top-border-bottom"></td>
+            <td class="border-top-border-bottom border-left-border-right"></td>
+            <td class="border-top-border-bottom"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td class="border-left-border-right"></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
     </div>
   </body>
 

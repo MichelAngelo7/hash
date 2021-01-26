@@ -27,8 +27,20 @@ function getDataPlayers(){
     
     if(startGame == true){
         $('#staticBackdrop').modal('hide');
+        fillNamePlayers();
         $('#game').show('slow');
     }
 
+}
+
+function fillNamePlayers(){
+
+    let playerOne = $("input[name='input_player_one']").val();
+
+    let playerTwo = $("input[name='input_player_two']").val();
+
+    $("#span_player_one").html(playerOne);
+    
+    $("#span_player_two").html(playerTwo);
 
 }

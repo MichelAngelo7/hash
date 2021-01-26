@@ -1,5 +1,9 @@
 #game{
-    display: none;
+   display: none;
+}
+
+.rank {
+    margin: 100px;
 }
 
 table{
